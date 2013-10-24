@@ -1,0 +1,139 @@
+/* Base */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #666;
+}
+
+p {
+    margin: 2em;
+}
+
+#port {
+    background: #333;
+    margin: 2em auto;
+    overflow: hidden;
+    position: relative;
+    width: 48em;
+    height: 32em;
+    padding: 2em;
+}
+
+#port div {
+    text-align: center;
+    padding: 1em;
+    width: 48em;
+    height: 32em;
+}
+
+#port img {
+    margin-top: 50px;
+}
+
+#port div div.square {
+    position: absolute;
+    margin: 16em 0 0 24em;
+    width: 10em;
+    height: 10em;
+    background-color: #777;
+}
+
+#port div:nth-child(1) div.square {
+    background-color: #666;
+     -webkit-filter: blur(3px); 
+     -moz-filter: blur(3px); 
+     -o-filter: blur(3px); 
+     -ms-filter: blur(3px); 
+     filter: blur(3px);
+     filter: url(blur1.svg#blur);
+}
+
+#port div:nth-child(2) div.square {
+    background-color: #777;
+}
+
+#port div:nth-child(3) div.square {
+    background-color: #888;
+     -webkit-filter: blur(3px); 
+     -moz-filter: blur(3px); 
+     -o-filter: blur(3px); 
+     -ms-filter: blur(3px); 
+     filter: blur(3px);
+     filter: url(blur1.svg#blur);
+}
+
+#port div:nth-child(4) div.square {
+    background-color: #999;
+     -webkit-filter: blur(6px); 
+     -moz-filter: blur(6px); 
+     -o-filter: blur(6px); 
+     -ms-filter: blur(6px); 
+     filter: blur(6px);
+     filter: url(blur2.svg#blur);
+}
+
+#port div div.header {
+    position: absolute;
+    margin: 0;
+    width: 40em;
+    height: 4em;
+    background-color: #777;
+}
+
+#port div div.header span {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#port div div.footer {
+    position: absolute;
+    bottom: 0;
+    width: 40em;
+    height: 4em;
+    background-color: #777;
+    text-align: left;
+}
+
+#port div div.footer span {
+    font-size: 12pt;
+}
+
+/* parallax stuff */
+
+.parallax-viewport {
+    position: relative;     /* relative, absolute, fixed */
+    overflow: hidden;
+}
+.parallax-layer {
+    position: absolute;
+
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+/* Clearfix
+   http://www.positioniseverything.net/easyclearing.html
+   with added position relative */
+.clear:after    {content:"\0020"; display:block; height:0; clear:both; visibility:hidden; overflow:hidden;}
+.clear          {display:block; position: relative;}
